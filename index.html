@@ -176,7 +176,7 @@
               <article class="new_posts">
                 <img class="new_posts_photo" src="img/2.jpg" width="70" alt="картинка">
                 <div class="new_posts_description">
-                  <time datetime="2019-06-14" class="date">14 июня 2019</time>
+                  <time datetime="2019-06-14" class="date_aside">14 июня 2019</time>
                   <a class="header_link" href="#0">
                     <h4 class="post_name">10 мест, ради которых стоит проснуться</h4>
                   </a>
@@ -235,7 +235,7 @@
                 <h3 class="post_name_header">рассылка</h3>
                 <form class="email">
                   <label class="email_block">
-                    <input type="email" class="email_text_field" placeholder="Ваш email-адрес" alt="Введите e-mail">
+                    <input type="email" class="email_text_field" placeholder="Ваш email-адрес" alt="Введите e-mail"><span class="social_link_text">Подписка</span>
                   </label>
                   <button type="submit" class="submit_button" alt="Кнопка поиска">подписаться</button>
                 </form>
@@ -258,12 +258,12 @@
               <section class="topics">
                 <h3 class="post_name_header">темы</h3>
                 <ul class="topics_list">
-                  <li class="topic"><a class="topic_link" href="#0">Красота<span class="number">12</span></a></li>
-                  <li class="topic"><a class="topic_link" href="#0">Здоровье<span class="number">4</span></a></li>
-                  <li class="topic"><a class="topic_link" href="#0">Образ жизни<span class="number">145</span></a></li>
-                  <li class="topic"><a class="topic_link" href="#0">Музыка<span class="number">28</span></a></li>
-                  <li class="topic"><a class="topic_link" href="#0">Спорт<span class="number">62</span></a></li>
-                  <li class="topic"><a class="topic_link" href="#0">Йога<span class="number">8</span></a></li>
+                  <li class="topic"><a class="topic_link" href="#0">Красота</a><span class="number">12</span></li>
+                  <li class="topic"><a class="topic_link" href="#0">Здоровье</a><span class="number">4</span></li>
+                  <li class="topic"><a class="topic_link" href="#0">Образ жизни</a><span class="number">145</span></li>
+                  <li class="topic"><a class="topic_link" href="#0">Музыка</a><span class="number">28</span></li>
+                  <li class="topic"><a class="topic_link" href="#0">Спорт</a><span class="number">62</span></li>
+                  <li class="topic"><a class="topic_link" href="#0">Йога</a><span class="number">8</span></li>
                 </ul>
               </section>
           </aside>
@@ -275,18 +275,30 @@
        
         <div class="shop_content">
           <section class="shop_items">
-            <div class="items_img"><img src="../Diploma_2/img/shop-item-desk1.jpg" width="300"></div>
-              <div class="items_content"><h2 class="items_post_h">Подушки на диван</h2>
-                <p class="items_text">Набор из двух подушек с модными принтами. Видео о создании<a href="#0" class="video_link"> здесь</a>.</p>
-                <div class="buy">
-                  <div class="price"><p class="old_price">1000 </p>
-                  <p class="new_price">800 </p></div>
-                  <button type="submit" class="shop_button" alt="В магазин">В магазин</button></div>
+            <div class="items_img">
+              <picture>
+                <source srcset="../Diploma_2/img/shop-item-desk1.jpg" media="(max-width: 300px)" />
+                <source srcset="../Diploma_2/img/shop-item-tablet1.jpg" media="(max-width: 292px)" />
+                <source srcset="../Diploma_2/img/shop-item-mobile1.jpg" media="(max-width: 285px)" />
+                <img src="../Diploma_2/img/shop-item-desk1.jpg" width="300" alt="Pillow" />
+              </picture></div>
+            <div class="items_content"><h2 class="items_post_h">Подушки на диван</h2>
+              <p class="items_text">Набор из двух подушек с модными принтами. Видео о создании<a href="#0" class="video_link"> здесь</a>.</p>
+              <div class="buy">
+                <div class="price"><p class="old_price">1000 </p>
+                <p class="new_price">800 </p></div>
+                <button type="submit" class="shop_button" alt="В магазин">В магазин</button></div>
               </div>
           </section>
 
           <section class="shop_items">
-            <div class="items_img"><img src="../Diploma_2/img/shop-item-desk2.jpg" width="300"></div>
+            <div class="items_img">
+              <picture>
+                <source srcset="../Diploma_2/img/shop-item-desk2.jpg" media="(max-width: 300px)" />
+                <source srcset="../Diploma_2/img/shop-item-tablet2.jpg" media="(max-width: 292px)" />
+                <source srcset="../Diploma_2/img/shop-item-mobile2.jpg" media="(max-width: 285px)" />
+                <img src="../Diploma_2/img/shop-item-desk2.jpg" width="300" alt="Bunny" />
+             </picture></div>
             <div class="items_content"><h2 class="items_post_h">Кукла "Зайчик"</h2>
               <p class="items_text">Интерьерная рукодельная кукла "Зайчик", сознаю которой посвящена <a href="#0" class="video_link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
               <div class="buy">
@@ -298,7 +310,13 @@
           </section>
 
           <section class="shop_items">
-            <div class="items_img"><img src="../Diploma_2/img/shop-item-desk3.jpg" width="300"></div>
+            <div class="items_img">
+              <picture>
+                <source srcset="../Diploma_2/img/shop-item-desk3.jpg" media="(max-width: 300px)" />
+                <source srcset="../Diploma_2/img/shop-item-tablet3.jpg" media="(max-width: 292px)" />
+                <source srcset="../Diploma_2/img/shop-item-mobile3.jpg" media="(max-width: 285px)" />
+                <img src="../Diploma_2/img/shop-item-desk3.jpg" width="300" alt="Frame" />
+             </picture></div>
            <div class="items_content"><h2 class="items_post_h">Шестиугольная рамка</h2>
               <p class="items_text"> Необыная рамка для украшения дома из видео<a href="#0" class="video_link"> "Как сделать раку из подручных средств за 30 минут"</a> в блоге и несколько подкастов.</p>
               <div class="buy">
@@ -328,3 +346,47 @@
       </footer>
 </body>
 </html>
+
+<div class="popup">
+  <button class="close">
+    <span class="close_x"></span>
+  </button>
+
+    <div class="pop_form">
+    <h1 class="pop_header">ваш фидбек</h1>
+
+    <div class="pop_select">
+      <p class="question">Как часто вы заходите на сайт?</p>
+      <select class="select_list">
+        <option value="list" class="list">Почти каждый день</option>
+        <option value="list" class="list">Раз в несколько дней</option>
+        <option value="list" class="list">Раз в несколько недель</option>
+        <option value="list" class="list">Несколько раз в год</option>
+      </select>
+    </div>
+
+    <div class="pop_subscr">
+      <p class="question">Вы подписаны на e-mail рассылку?</p>
+      <form>
+        <input id="yes" class="option_yes" type="radio" name="point" checked>
+        <label for="yes" class="option">Да</label>
+
+        <input id="no" class="option_no" type="radio" name="point">
+        <label for="no" class="option">Нет</label>
+      </form>
+    </div>
+
+    <div class="pop_text">
+      <p class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+      <form>
+        <textarea class="idea_field" placeholder="Может, больше рецептов?"></textarea>
+      </form>
+    </div>
+
+    <div class="button_pop">
+      <form action="url">
+        <button class="button">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
