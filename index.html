@@ -12,7 +12,7 @@
         <div class="header_content">
           <a href="#0" class="logo_link">
             <img src="svg/noemi-logo.svg" width="180" class="logo_img" alt="Логотип NOEMI"></a>
-            <a href="0"><img class="burger_menu" src="../Diploma_2/svg/menu.svg" alt="Меню"></a>
+            <a href="0"><img class="burger_menu" src="svg/menu.svg" alt="Меню"></a>
             <ul class="menu">
             <li class="menu_list"><a href="#0" class="menu_link">главная</a></li>
             <li class="menu_list"><a href="#0" class="menu_link">посты</a></li>
@@ -277,12 +277,10 @@
         <div class="shop_content">
           <section class="shop_items">
             <div class="items_img">
-              <picture>
-                <source srcset="../Diploma_2/img/shop-item-desk1.jpg" media="(max-width: 300px)" />
-                <source srcset="../Diploma_2/img/shop-item-tablet1.jpg" media="(max-width: 1180px)" />
-                <source srcset="../Diploma_2/img/shop-item-mobile1.jpg" media="(max-width: 285px)" />
-                <img src="../Diploma_2/img/shop-item-desk1.jpg" width="300" alt="Pillow" />
-              </picture></div>
+              <img src="../Diploma_2/img/shop-item-desk1.jpg" alt="Pillow" srcset="../Diploma_2/img/shop-item-tablet1.jpg 292w, ../Diploma_2/img/shop-item-mobile1.jpg 285w"
+              sizes="(min-width: 1200px) 300px,
+              (max-width: 1200px) 292px,
+              (max-width: 640px) 285px"></div>
             <div class="items_content"><h2 class="items_post_h">Подушки на диван</h2>
               <p class="items_text">Набор из двух подушек с модными принтами. Видео о создании<a href="#0" class="video_link"> здесь</a>.</p>
               <div class="buy">
@@ -294,12 +292,12 @@
 
           <section class="shop_items">
             <div class="items_img">
-              <picture>
-                <source srcset="../Diploma_2/img/shop-item-desk2.jpg" media="(max-width: 300px)" />
-                <source srcset="../Diploma_2/img/shop-item-tablet2.jpg" media="(max-width: 1180px)" />
-                <source srcset="../Diploma_2/img/shop-item-mobile2.jpg" media="(max-width: 285px)" />
-                <img src="../Diploma_2/img/shop-item-desk2.jpg" width="300" alt="Bunny" />
-             </picture></div>
+              <div>
+              <img src="../Diploma_2/img/shop-item-desk2.jpg" alt="Bunny" srcset="../Diploma_2/img/shop-item-tablet2.jpg 292w, ../Diploma_2/img/shop-item-mobile2.jpg 285w"
+              sizes="(min-width: 1200px) 300px,
+              (max-width: 1200px) 292px,
+              (max-width: 640px) 285px">
+            </div>
             <div class="items_content"><h2 class="items_post_h">Кукла "Зайчик"</h2>
               <p class="items_text">Интерьерная рукодельная кукла "Зайчик", сознаю которой посвящена <a href="#0" class="video_link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
               <div class="buy">
@@ -312,12 +310,11 @@
 
           <section class="shop_items">
             <div class="items_img">
-              <picture>
-                <source srcset="../Diploma_2/img/shop-item-desk3.jpg" media="(max-width: 300px)" />
-                <source srcset="../Diploma_2/img/shop-item-tablet3.jpg" media="(max-width: 1180px)" />
-                <source srcset="../Diploma_2/img/shop-item-mobile3.jpg" media="(max-width: 285px)" />
-                <img src="../Diploma_2/img/shop-item-desk3.jpg" width="300" alt="Frame" />
-             </picture></div>
+              <img src="../Diploma_2/img/shop-item-desk3.jpg" alt="Frame" srcset="../Diploma_2/img/shop-item-tablet3.jpg 292w, ../Diploma_2/img/shop-item-mobile3.jpg 285w"
+              sizes="(min-width: 1200px) 300px,
+              (max-width: 1200px) 292px,
+              (max-width: 640px) 285px">
+            </div>
            <div class="items_content"><h2 class="items_post_h">Шестиугольная рамка</h2>
               <p class="items_text"> Необыная рамка для украшения дома из видео<a href="#0" class="video_link"> "Как сделать раку из подручных средств за 30 минут"</a> в блоге и несколько подкастов.</p>
               <div class="buy">
@@ -368,13 +365,15 @@
 
     <div class="pop_subscr">
       <p class="question">Вы подписаны на e-mail рассылку?</p>
-      <form>
-        <input id="yes" class="radio_opt" type="radio" name="point">
-        <label for="yes" class="radio_b">Да</label>
+      <lable class="radio_group">
+        <input type="radio" name="point" class="radio_opt">
+        <span class="radio_text">Да</span> 
+      </lable>  
 
-        <input id="no" class="radio_opt" type="radio" name="point">
-        <label for="no" class="radio_b">Нет</label>
-      </form>
+      <lable class="radio_group">
+        <input type="radio" name="point" class="radio_opt">
+        <span class="radio_text">Нет</span> 
+      </lable>
     </div>
 
     <div class="pop_text">
